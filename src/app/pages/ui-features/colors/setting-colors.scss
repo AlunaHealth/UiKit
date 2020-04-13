@@ -1,0 +1,155 @@
+
+$cha-primary: #323563;
+$cha-secondary: #1EAAF1;
+$gray: #E1E1E1;
+$light-secondary: #ECECEC;
+$strange-red: #CE2A5C;
+$highlight: #EDF8C1;
+$border-color: #cccccc;
+$selected: #ECF5FF;
+$the-lightest:#f9f9f9;
+$disable: #f2f2f2;
+$hover: #4BBBF4;
+$pressed: #1B99D9;
+$white: #fff;
+$link: #1EAAF1;
+$text: #121212;
+$sub-text: #545454;
+$low-contrast-text: #757575;
+$placeholder: #999999;
+$Links-on-dark: #809CFF;
+$negative: #EB5757;
+$warning: #F2C94C;
+
+.color {
+  &-cha-primary {
+    color: $cha-primary;
+  }
+  &-cha-secondary {
+    color: $cha-secondary;
+  }
+  &-gray {
+    color: $gray;
+  }
+  &-light-secondary {
+    color: $light-secondary;
+  }
+  &-strange-red {
+    color: $strange-red;
+  }
+  &-highlight {
+    color: $highlight;
+  }
+  &-border-color {
+    color: $border-color;
+  }
+  &-selected {
+    color: $selected;
+  }
+  &-the-lightest {
+    color: $the-lightest;
+  }
+  &-disable {
+    color: $disable;
+  }
+  &-hover {
+    color: $hover;
+  }
+  &-pressed {
+    color: $pressed;
+  }
+  &-white {
+  color: $white;
+}
+  &-link {
+  color: $link;
+}
+ &-text {
+  color: $text;
+}
+  &-sub-text {
+  color: $sub-text;
+}
+  &-low-contrast-text {
+  color: $low-contrast-text;
+}
+  &-placeholder {
+  color: $placeholder;
+}
+
+  &-Links-on-dark {
+  color: $Links-on-dark;
+}
+  &-negative {
+  color: $negative;
+}
+    &-warning {
+    color: $warning;
+  }
+}
+.bg {
+  &-cha-primary {
+    background-color: $cha-primary;
+  }
+  &-cha-secondary {
+    background-color: $cha-secondary;
+  }
+  &-gray {
+    background-color: $gray;
+  }
+  &-light-secondary {
+    background-color: $light-secondary;
+  }
+  &-strange-red {
+    background-color: $strange-red;
+  }
+  &-highlight {
+    background-color: $highlight;
+  }
+  &-border-color {
+    background-color: $border-color;
+  }
+  &-selected {
+    background-color: $selected;
+  }
+  &-the-lightest {
+    background-color: $the-lightest;
+  }
+  &-disable {
+    background-color: $disable;
+  }
+  &-hover {
+    background-color: $hover;
+  }
+  &-pressed {
+    background-color: $pressed;
+  }
+  &-white {
+    background-color: $white;
+  }
+  &-link {
+    background-color: $link;
+  }
+  &-text {
+    background-color: $text;
+  }
+  &-sub-text {
+      background-color: $sub-text;
+  }
+  &-low-contrast-text {
+    background-color: $low-contrast-text;
+  }
+  &-placeholder {
+    background-color: $placeholder;
+  }
+
+  &-links-on-dark {
+    background-color: $Links-on-dark;
+  }
+  &-negative {
+    background-color: $negative;
+  }
+  &-warning {
+    background-color: $warning;
+  }
+}

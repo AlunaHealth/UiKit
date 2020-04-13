@@ -1,0 +1,67 @@
+
+nb-card-body {
+  overflow: visible;
+  padding-top: 0;
+
+  > * {
+    margin-top: 1rem;
+  }
+}
+
+.FlexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+::ng-deep{
+  .cha-radio {
+    .mat-radio-container {
+     width: 22px;
+      height: 22px;
+    }
+    .mat-radio-outer-circle {
+      width: 22px;
+      height: 22px;
+      border: 2px solid #E1E1E1;
+    }
+    .mat-radio-inner-circle {
+      height: 22px;
+      width: 22px;
+    }
+    &.mat-radio-checked .mat-radio-inner-circle {
+      transform: scale(0.363);
+    }
+    &.mat-radio-button.mat-accent .mat-radio-inner-circle,
+    &.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+    &.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+    &.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+      background-color: #1EAAF1;
+    }
+    &.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+      border-color: #1EAAF1;
+    }
+    &.mat-radio-button.mat-radio-disabled.mat-radio-checked ,
+    &.mat-radio-button.mat-radio-disabled {
+      .mat-radio-outer-circle {
+        border: 2px solid #E1E1E1;
+        background: #F2F2F2;
+      }
+      .mat-radio-inner-circle {
+        background: #F2F2F2;
+      }
+    }
+    &.mat-radio-button .mat-radio-label-content {
+      font-size: 14px;
+      color: #545454;
+    }
+    &.mat-radio-checked.mat-radio-button .mat-radio-label-content {
+      color: #121212;
+    }
+    &.mat-radio-disabled.mat-radio-button .mat-radio-label-content {
+      color: #999999;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+
+nb-card-body {
+  overflow: visible;
+  padding-top: 0;
+
+  > * {
+    margin-top: 1rem;
+  }
+}
+
+::ng-deep {
+  .cha-slide {
+    .mat-slide-toggle-bar {
+      background: rgba(34, 31, 31, 0.26);
+    }
+    .mat-slide-toggle-thumb {
+      background: #F1F1F1;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    }
+    &.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+      background-color: #1EAAF1;
+    }
+    &.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+      background: #FFFFFF;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

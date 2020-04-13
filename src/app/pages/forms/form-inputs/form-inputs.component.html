@@ -1,0 +1,422 @@
+<div class="row">
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Text</nb-card-header>
+      <nb-card-body>
+        <div class="list-component-wrapper list-component-wrapper_inputs">
+          <div class="list-component">
+            <div class="list-component__item">
+              Def
+            </div>
+            <div class="list-component__item">
+              <mat-form-field >
+                <input matInput >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Def+placeholder
+            </div>
+            <div class="list-component__item">
+              <mat-form-field >
+                <input matInput placeholder="Input text" >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Filled
+            </div>
+            <div class="list-component__item">
+              <mat-form-field >
+                <input matInput placeholder="Input text" value="Input text" >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+          <div class="list-component__item">
+            Disabled
+          </div>
+          <div class="list-component__item">
+            <mat-form-field  >
+              <input matInput disabled>
+            </mat-form-field>
+          </div>
+        </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              View Only
+            </div>
+            <div class="list-component__item">
+              <mat-form-field >
+                <input matInput value="Input text" disabled >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+             Error
+            </div>
+            <div class="list-component__item">
+
+              <mat-form-field >
+                <mat-label>Email</mat-label>
+                <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" >
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Text & Left Icon</nb-card-header>
+      <nb-card-body>
+        <div class="list-component-wrapper list-component-wrapper_inputs">
+          <div class="list-component">
+            <div class="list-component__item">
+              Def
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon">
+                <input matInput >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Def+placeholder
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon">
+                <input matInput placeholder="Input text" >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Filled
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon">
+                <input matInput placeholder="Input text" value="Input text" >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Disabled
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon">
+                <input matInput disabled>
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              View Only
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon">
+                <input matInput value="Input text" disabled >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Error
+            </div>
+            <div class="list-component__item">
+
+              <mat-form-field class="icon">
+                <mat-label>Email</mat-label>
+                <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" >
+                <i class="icon-basic icon-search"></i>
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Text & Right Icon</nb-card-header>
+      <nb-card-body>
+        <div class="list-component-wrapper list-component-wrapper_inputs">
+          <div class="list-component">
+            <div class="list-component__item">
+              Def
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon icon-right">
+                <input matInput >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Def+placeholder
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon icon-right">
+                <input matInput placeholder="Input text" >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Filled
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon icon-right">
+                <input matInput placeholder="Input text" value="Input text" >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Disabled
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon icon-right">
+                <input matInput disabled>
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              View Only
+            </div>
+            <div class="list-component__item">
+              <mat-form-field class="icon icon-right">
+                <input matInput value="Input text" disabled >
+                <i class="icon-basic icon-search"></i>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              Error
+            </div>
+            <div class="list-component__item">
+
+              <mat-form-field class="icon icon-right">
+                <mat-label>Email</mat-label>
+                <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" >
+                <i class="icon-basic icon-search"></i>
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Text</nb-card-header>
+      <nb-card-body>
+        <div class="list-component-wrapper list-component-wrapper_inputs">
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                  <mat-form-field >
+                    <input matInput placeholder="Search...">
+                  </mat-form-field>
+                  <div class="search-loader">
+                    <i class="icon-basic icon-search color-white"></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field >
+                  <input matInput placeholder="Search..." value="value">
+                </mat-form-field>
+                <div class="search-loader">
+                  <i *ngIf="false" class="icon-basic icon-search color-white"></i>
+
+                  <mat-progress-spinner *ngIf="true" class="progress-spinner" mode="indeterminate" diameter="16" strokeWidth="2">
+                  </mat-progress-spinner>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field class="icon icon-right">
+                  <input matInput placeholder="Search..." value="{{searchText}}">
+                  <i class="icon-basic icon-close  color-gray"></i>
+                </mat-form-field>
+                <div class="search-loader">
+                  <i *ngIf="true" class="icon-basic icon-search color-white" (mouseup)="clear($event)"></i>
+
+                  <mat-progress-spinner *ngIf="false" class="progress-spinner" mode="indeterminate" diameter="16" strokeWidth="2">
+                  </mat-progress-spinner>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Textarea</nb-card-header>
+      <nb-card-body>
+        <div class="list-component-wrapper list-component-wrapper_inputs">
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field class="custom-textarea">
+                  <textarea matInput
+                            cdkTextareaAutosize
+                            #autosize="cdkTextareaAutosize"
+                            cdkAutosizeMinRows="3"
+                            cdkAutosizeMaxRows="5"></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field class="custom-textarea">
+                  <mat-label>Autosize textarea</mat-label>
+                  <textarea matInput
+                            cdkTextareaAutosize
+                            #autosize="cdkTextareaAutosize"
+                            cdkAutosizeMinRows="3"
+                            cdkAutosizeMaxRows="5"></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field class="custom-textarea">
+                  <mat-label>Autosize textarea</mat-label>
+                  <textarea matInput
+                            cdkTextareaAutosize
+                            #autosize="cdkTextareaAutosize"
+                            cdkAutosizeMinRows="3"
+                            cdkAutosizeMaxRows="5"
+                            value="nemnogo teksta"
+                  ></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+                <div class="search-loader-wrapper">
+                  <mat-form-field class="custom-textarea">
+                    <textarea matInput
+                              cdkTextareaAutosize
+                              #autosize="cdkTextareaAutosize"
+                              cdkAutosizeMinRows="3"
+                              cdkAutosizeMaxRows="5"
+                    disabled></textarea>
+                  </mat-form-field>
+                </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field class="custom-textarea">
+                  <mat-label>Autosize textarea</mat-label>
+                  <textarea matInput
+                            cdkTextareaAutosize
+                            #autosize="cdkTextareaAutosize"
+                            cdkAutosizeMinRows="3"
+                            cdkAutosizeMaxRows="5"
+                            disabled
+                  ></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="list-component">
+            <div class="list-component__item">
+              <div class="search-loader-wrapper">
+                <mat-form-field class="custom-textarea">
+                  <mat-label>Autosize textarea</mat-label>
+                  <textarea matInput
+                            cdkTextareaAutosize
+                            #autosize="cdkTextareaAutosize"
+                            cdkAutosizeMinRows="3"
+                            cdkAutosizeMaxRows="5"
+                            value="nemnogo teksta"
+                            disabled
+                  ></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Select</nb-card-header>
+      <nb-card-body>
+        <div class="list-component-wrapper list-component-wrapper_inputs">
+          <div class="list-component">
+            <div class="list-component__item">
+              <ng-select class="select-component" [items]="cities"
+                         bindLabel="name"
+                         placeholder="Select city"
+                         [(ngModel)]="selectedCity">
+              </ng-select>
+
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

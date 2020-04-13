@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-lg-4">
+    <nb-card>
+      <nb-card-header>Checkbox</nb-card-header>
+      <nb-card-body>
+        <mat-radio-group
+          class="FlexColumn"
+          [(ngModel)]="favoriteSeason">
+          <mat-radio-button class="cha-radio" *ngFor="let season of seasons" [value]="season">
+            {{season}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <div>Your favorite season is: {{favoriteSeason}}</div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
