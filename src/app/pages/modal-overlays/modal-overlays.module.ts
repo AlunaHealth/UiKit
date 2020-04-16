@@ -1,62 +1,43 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {
-  NbButtonModule,
   NbCardModule,
-  NbCheckboxModule,
-  NbDialogModule,
-  NbInputModule,
-  NbPopoverModule,
-  NbSelectModule,
-  NbTabsetModule,
-  NbTooltipModule,
   NbWindowModule,
 } from '@nebular/theme';
 
 // modules
 import { ThemeModule } from '../../@theme/theme.module';
 import { ModalOverlaysRoutingModule } from './modal-overlays-routing.module';
-
+import { SatPopoverModule } from '@ncstate/sat-popover';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 // components
-import { ModalOverlaysComponent } from './modal-overlays.component';
-import { PopoversComponent } from './popovers/popovers.component';
-import {
-  NgxPopoverCardComponent, NgxPopoverFormComponent,
-  NgxPopoverTabsComponent,
-} from './popovers/popover-examples.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
-
+import { ModalComponent } from './modal/modal.component';
+import {ModalOverlaysComponent} from './modal-overlays.component';
+import {FormsRoutingModule} from '../forms/forms-routing.module';
+import { AlertDialogComponent } from './modal/alert-dialog/alert-dialog.component';
 
 const COMPONENTS = [
   ModalOverlaysComponent,
-
-  PopoversComponent,
-  NgxPopoverCardComponent,
-  NgxPopoverFormComponent,
-  NgxPopoverTabsComponent,
-  TooltipComponent,
+  ModalComponent,
+  AlertDialogComponent,
 ];
 
 const ENTRY_COMPONENTS = [
-  NgxPopoverCardComponent,
-  NgxPopoverFormComponent,
-  NgxPopoverTabsComponent,
 ];
 
 const MODULES = [
   FormsModule,
   ThemeModule,
   ModalOverlaysRoutingModule,
-  NbDialogModule.forChild(),
   NbWindowModule.forChild(),
   NbCardModule,
-  NbCheckboxModule,
-  NbTabsetModule,
-  NbPopoverModule,
-  NbButtonModule,
-  NbInputModule,
-  NbSelectModule,
-  NbTooltipModule,
+  FormsRoutingModule,
+  SatPopoverModule,
+  MatExpansionModule,
+  MatDialogModule,
+  MatSnackBarModule,
 ];
 
 const SERVICES = [

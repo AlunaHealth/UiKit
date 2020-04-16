@@ -1,0 +1,64 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+
+  }
+}
+
+.aluna-table {
+  width: 100%;
+
+  &.mat-table {
+    background: transparent;
+
+    tr {
+
+      &.mat-header-row {
+        background: transparent;
+      }
+
+      &.mat-row {
+        height: 28px;
+      }
+    }
+
+    & .mat-header-row {
+      height: 28px;
+    }
+
+    th.mat-header-cell {
+      color: #757575;
+      font-size: 11px;
+      line-height: 1.38em;
+      padding: 4px 2px;
+      border-bottom: 1px solid #323563;
+
+      &:first-of-type {
+        padding-left: 8px;
+      }
+
+      &:last-of-type {
+        padding-right: 8px;
+        font-size: 0;
+      }
+
+    }
+
+    td.mat-cell {
+      padding: 4px 2px;
+      color: #121212;
+      border-bottom: 1px solid #ECECEC;
+
+      &:first-of-type {
+        padding-left: 8px;
+        color: #757575;
+      }
+
+      &:last-of-type {
+        padding-right: 8px;
+      }
+    }
+  }
+
+}

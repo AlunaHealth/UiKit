@@ -5,7 +5,7 @@ import { NbComponentShape, NbComponentSize, NbComponentStatus } from '@nebular/t
   selector: 'ngx-buttons',
   styleUrls: ['./buttons.component.scss', '../../ui-features/icons/icons-fonts.scss',
     '../../ui-features/colors/setting-colors.scss',
-    '../../ui-features/icons/icons.component.scss', '../../forms/buttons/buttons.component.scss'],
+    '../../ui-features/icons/icons.component.scss'],
   templateUrl: './buttons.component.html',
 })
 export class ButtonsComponent {

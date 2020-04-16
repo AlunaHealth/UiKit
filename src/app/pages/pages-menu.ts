@@ -2,12 +2,6 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
-    link: '/pages/dashboard',
-    home: true,
-  },
-  {
     title: 'FEATURES',
     group: true,
   },
@@ -16,7 +10,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'layout-outline',
     children: [
       {
-        title: 'Tabs',
+        title: 'Tabs and Widjets',
         pathMatch: 'prefix',
         link: '/pages/layout/tabs',
       },
@@ -73,13 +67,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'browser-outline',
     children: [
       {
-        title: 'Popover',
+        title: 'Modals',
         link: '/pages/modal-overlays/popover',
-      },
-
-      {
-        title: 'Tooltip',
-        link: '/pages/modal-overlays/tooltip',
       },
     ],
   },
@@ -89,12 +78,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
 
       {
-        title: 'Progress Bar',
+        title: 'Progress Bar and Spinner',
         link: '/pages/extra-components/progress-bar',
-      },
-      {
-        title: 'Spinner',
-        link: '/pages/extra-components/spinner',
       },
     ],
   },
@@ -103,22 +88,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'grid-outline',
     children: [
       {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
-      },
-      {
-        title: 'Tree Grid',
-        link: '/pages/tables/tree-grid',
-      },
-    ],
-  },
-  {
-    title: 'Miscellaneous',
-    icon: 'shuffle-2-outline',
-    children: [
-      {
-        title: '404',
-        link: '/pages/miscellaneous/404',
+        title: 'Material Table',
+        link: '/pages/tables/material-table',
       },
     ],
   },

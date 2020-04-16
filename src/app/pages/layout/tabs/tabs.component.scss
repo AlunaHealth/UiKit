@@ -4,7 +4,44 @@ nb-tabset {
   flex-direction: column;
 }
 
-:host ::ng-deep ngx-tab1, :host ::ng-deep ngx-tab2 {
-  display: block;
-  padding: 1rem 2rem;
-}
+::ng-deep {
+  .cha-tabs {
+    &.mat-tab-group {
+      height: 100%;
+    }
+    .mat-tab-body-wrapper {
+      height: 100%;
+    }
+    .mat-tab-label-content {
+      color: #1EAAF1;
+      font-size: 16px;
+    }
+    .mat-tab-label-active {
+      background-color: #fff;
+      .mat-tab-label-content {
+        color: #323563;
+      }
+    }
+    .mat-tab-label {
+      opacity: 1;
+      padding: 0 16px;
+      min-width: auto;
+    }
+    .mat-tab-body {
+      background-color: #fff;
+      padding: 12px 19px 12px;
+      border: 1px solid #F2F2F2;
+
+    }
+    .mat-ink-bar{
+      box-shadow: inset 0px -2px 0px #323563 !important;
+      background-color: transparent !important;
+    }
+    .mat-tab-nav-bar, .mat-tab-header {
+      border: none;
+    }
+    .mat-tab-label-container {
+      border-bottom: 1px solid #E7E7E7;
+    }
+  }
+ }

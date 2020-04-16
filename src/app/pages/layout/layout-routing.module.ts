@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from './layout.component';
-import { Tab1Component, Tab2Component, TabsComponent } from './tabs/tabs.component';
+import {TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [{
   path: '',
@@ -11,21 +11,6 @@ const routes: Routes = [{
     {
       path: 'tabs',
       component: TabsComponent,
-      children: [
-        {
-          path: '',
-          redirectTo: 'tab1',
-          pathMatch: 'full',
-        },
-        {
-          path: 'tab1',
-          component: Tab1Component,
-        },
-        {
-          path: 'tab2',
-          component: Tab2Component,
-        },
-      ],
     },
   ],
 }];

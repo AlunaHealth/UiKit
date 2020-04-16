@@ -120,7 +120,7 @@ nb-card-body {
   .icon {
     .mat-form-field-wrapper .mat-form-field-infix {
       padding: 7px 10px 7px 28px;
-      & .icon-basic, .icon-files {
+      & .icon-basic, .icon-files, .icon-16 {
         font-size: 16px;
         color: #757575;
         position: absolute;
@@ -141,7 +141,7 @@ nb-card-body {
     &-right {
       .mat-form-field-wrapper .mat-form-field-infix {
         padding: 7px 28px 7px 10px;
-        & .icon-basic, .icon-files {
+        & .icon-basic, .icon-files, .icon-16 {
           left: unset;
           right: 8px;
         }

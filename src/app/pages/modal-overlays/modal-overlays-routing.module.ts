@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ModalOverlaysComponent } from './modal-overlays.component';
-import { PopoversComponent } from './popovers/popovers.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
+import { ModalComponent } from './modal/modal.component';
 
 const routes: Routes = [{
   path: '',
@@ -10,13 +9,8 @@ const routes: Routes = [{
   children: [
     {
       path: 'popover',
-      component: PopoversComponent,
+      component: ModalComponent,
     },
-    {
-      path: 'tooltip',
-      component: TooltipComponent,
-    },
-
   ],
 }];
 

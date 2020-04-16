@@ -1,0 +1,124 @@
+<div class="row">
+  <div class="col-md-4 col-lg-4">
+    <nb-card>
+      <nb-card-header>popover</nb-card-header>
+        <nb-card-body>
+          <div>
+            <div class="btn" [satPopoverAnchor]="p" (mouseenter)="p.open()" (mouseleave)="p.close()">Hover</div>
+            <sat-popover #p horizontalAlign="after">
+              <div class="popover">
+                <div class="popover__date"> 02/01/2007 </div>
+                <div class="popover__title popover-title"> <span>
+                              not
+                              </span>
+                  <div class="popover-title__text"> CIE2017_08222008_Clinic_Note.txt </div>
+                </div>
+                <div class="popover__content popover-content">
+                  <p> This was a T4a tumor extending to the chest wall, not including the pectoralis muscle. </p>
+                </div>
+              </div>
+            </sat-popover>
+          </div>
+        </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <nb-card>
+      <nb-card-header>Notifiaction</nb-card-header>
+      <nb-card-body>
+        <div>
+          <div class="sheet-component" [class.decision-collapse]="Decision" style="position: relative; right: initial; bottom: initial;">
+            <div class="sheet-component__header sheet-component-header" (click)="toggleDecision()">
+              <div class="sheet-component-header__title sheet-component-header-title" [class.haveSupCollapsed]="haveSuppport && Decision" [class.haveSupExpanded]="haveSuppport && !Decision" [class.NohaveSupExpanded]="!haveSuppport && !Decision" [class.NohaveSupCollapsed]="!haveSuppport && Decision"> Decision Support<span class="sheet-component-header-title__count">&nbsp;(12)</span> </div>
+              <div class="sheet-component-header__btn"> {{contentDecisionBtn}} </div>
+            </div>
+            <mat-accordion *ngIf="!Decision">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+                  <mat-panel-title>
+                    <div class="sheet-accordion-title"> <i><img src="../../../../assets/images/sucs.svg" alt="sucsess"></i> <span class="sheet-accordion-title__text">
+                     7 new clinical trials
+                     </span> </div>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="sheet-accordion-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices tellus porta posuere varius. Aliquam ut enim vitae dolor aliquet dapibus sed eget dolor. Pellentesque interdum in nisl eu euismod. </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
+                  <mat-panel-title>
+                    <div class="sheet-accordion-title"> <i><img src="../../../../assets/images/sucs.svg" alt="sucsess"></i> <span class="sheet-accordion-title__text">
+                     6 new clinical trials
+                     </span> </div>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="sheet-accordion-content"> 123 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices tellus porta posuere varius. Aliquam ut enim vitae dolor aliquet dapibus sed eget dolor. Pellentesque interdum in nisl eu euismod. </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <nb-card>
+      <nb-card-header>Dialog</nb-card-header>
+      <nb-card-body>
+        <div>
+        <div class="btn" (click)="openAlertDialog()">
+          click
+        </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+
+  <div class="col-md-4 col-lg-4">
+    <nb-card>
+      <nb-card-header>popover Example</nb-card-header>
+      <nb-card-body>
+        <div>
+            <code>
+              on btn add [satPopoverAnchor]="p" (mouseenter)="p.open()" (mouseleave)="p.close()" <br><br>
+              ____________________________________________________ <br><br>
+              sat-popover #p horizontalAlign="after" <br>
+              ...content... <br>
+              /sat-popover
+            </code>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <nb-card>
+      <nb-card-header>Notification Example</nb-card-header>
+      <nb-card-body>
+
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    <nb-card>
+      <nb-card-header>Dialog</nb-card-header>
+      <nb-card-body>
+        <div>
+          <code>
+            div class="cha-dialog" <br>
+              div class="cha-dialog__header cha-dialog-header"<br>
+             &nbsp;&nbsp;  div class="cha-dialog-header__title cha-dialog-header-title" mat-dialog-title"<br>
+            &nbsp;&nbsp;&nbsp;   header Text<br>
+            &nbsp;&nbsp;    /div<br>
+            &nbsp;&nbsp;   i class="icon-16 icon-close-2 color-cha-secondary" mat-dialog-close> /i<br>
+            &nbsp;&nbsp;  /div<br>
+            &nbsp;&nbsp;  mat-dialog-content<br>
+            &nbsp;&nbsp;&nbsp;     ..... Content ........<br>
+            &nbsp;&nbsp;   /mat-dialog-content<br>
+            /div
+          </code>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+
+</div>

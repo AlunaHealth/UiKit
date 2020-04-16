@@ -89,7 +89,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon">
                 <input matInput >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -100,7 +100,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon">
                 <input matInput placeholder="Input text" >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -111,7 +111,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon">
                 <input matInput placeholder="Input text" value="Input text" >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -122,7 +122,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon">
                 <input matInput disabled>
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -133,7 +133,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon">
                 <input matInput value="Input text" disabled >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -146,7 +146,7 @@
               <mat-form-field class="icon">
                 <mat-label>Email</mat-label>
                 <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                   Please enter a valid email address
                 </mat-error>
@@ -173,7 +173,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon icon-right">
                 <input matInput >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -184,7 +184,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon icon-right">
                 <input matInput placeholder="Input text" >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -195,7 +195,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon icon-right">
                 <input matInput placeholder="Input text" value="Input text" >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -206,7 +206,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon icon-right">
                 <input matInput disabled>
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -217,7 +217,7 @@
             <div class="list-component__item">
               <mat-form-field class="icon icon-right">
                 <input matInput value="Input text" disabled >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
               </mat-form-field>
             </div>
           </div>
@@ -230,7 +230,7 @@
               <mat-form-field class="icon icon-right">
                 <mat-label>Email</mat-label>
                 <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" >
-                <i class="icon-basic icon-search"></i>
+                <i class="icon-basic icon-circle-plus"></i>
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                   Please enter a valid email address
                 </mat-error>
@@ -259,7 +259,7 @@
                     <input matInput placeholder="Search...">
                   </mat-form-field>
                   <div class="search-loader">
-                    <i class="icon-basic icon-search color-white"></i>
+                    <i class="icon-basic icon-circle-plus color-white"></i>
                   </div>
               </div>
             </div>
@@ -271,7 +271,7 @@
                   <input matInput placeholder="Search..." value="value">
                 </mat-form-field>
                 <div class="search-loader">
-                  <i *ngIf="false" class="icon-basic icon-search color-white"></i>
+                  <i *ngIf="false" class="icon-basic icon-circle-plus color-white"></i>
 
                   <mat-progress-spinner *ngIf="true" class="progress-spinner" mode="indeterminate" diameter="16" strokeWidth="2">
                   </mat-progress-spinner>
@@ -285,10 +285,10 @@
               <div class="search-loader-wrapper">
                 <mat-form-field class="icon icon-right">
                   <input matInput placeholder="Search..." value="{{searchText}}">
-                  <i class="icon-basic icon-close  color-gray"></i>
+                  <i class="icon-16 icon-close-2  color-gray"></i>
                 </mat-form-field>
                 <div class="search-loader">
-                  <i *ngIf="true" class="icon-basic icon-search color-white" (mouseup)="clear($event)"></i>
+                  <i *ngIf="true" class="icon-basic icon-circle-plus color-white" (mouseup)="clear($event)"></i>
 
                   <mat-progress-spinner *ngIf="false" class="progress-spinner" mode="indeterminate" diameter="16" strokeWidth="2">
                   </mat-progress-spinner>

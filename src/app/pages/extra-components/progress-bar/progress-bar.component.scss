@@ -5,3 +5,14 @@
     margin-top: 1rem;
   }
 }
+
+::ng-deep {
+  .progress-outer {
+    border: none !important;
+    background: transparent !important;
+  }
+  .progress-inner {
+    border-radius: 0 !important;
+    min-height: 4px !important;
+  }
+}

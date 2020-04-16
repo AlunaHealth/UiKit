@@ -1,0 +1,224 @@
+@import '~@nebular/theme/styles/core/mixins';
+
+nb-card-body {
+}
+
+.popover {
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15px 13px 9px;
+  max-width: 232px;
+
+  &__date {
+    padding-left: 10px;
+    position: relative;
+    font-size: 9px;
+    color: #757575;
+    margin-bottom: 4px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      transform: translateY(50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 8px;
+      height: 8px;
+      background-image: url('./calend.svg');
+
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+  }
+
+  &__content {
+    & p {
+      color: #545454;
+      font-size: 11px;
+      line-height: 1.44em;
+      margin-bottom: 8px;
+      & a {
+        color: #06BEF9;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.popover-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  margin-bottom: 4px;
+
+  &__text {
+    font-size: 11px;
+    line-height: 16px;
+    color: #06BEF9;
+    margin-left: 8px;
+  }
+
+  & span {
+    background: #DDF2FD;
+    width: 26px;
+    height: 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.sheet-component {
+  width: 475px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #fff;
+
+  .mat-expansion-indicator {
+    left: initial;
+    right: 0;
+  }
+
+  .mat-expansion-panel-spacing {
+    margin: 0;
+  }
+
+  .mat-expansion-panel {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mat-expansion-panel-header {
+    box-shadow: none;
+  }
+
+  .sheet-accordion-content {
+    white-space: normal !important;
+    color: #000000;
+    padding: 0;
+  }
+
+  .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+    background: transparent;
+  }
+  &.decision-collapse {
+    .sheet-component-header {
+      background: #323563;
+      &__btn {
+        color: #809CFF;
+      }
+      &__title {
+        color: #fff;
+
+      }
+    }
+  }
+}
+
+.sheet-accordion-title {
+  color: #1EAAF1;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+
+  &__text {
+    margin-left: 7px;
+  }
+
+}
+
+.sheet-component-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding: 0 12px;
+  min-height: 40px;
+  background: #ECF5FF;
+  mix-blend-mode: darken;
+  cursor: pointer;
+
+  &__btn {
+    color: #007ad9;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.sheet-component-header-title {
+  padding-left: 26px;
+  color: #323563;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  &.haveSupCollapsed {
+    &:after {
+      background-image: url('./plan-active-blue.svg');
+    }
+  }
+  &.haveSupExpanded {
+    &:after {
+      background-image: url('./plan.svg');
+    }
+  }
+  &.NohaveSupCollapsed {
+    &:after {
+      background-image: url('./plan-active.svg');
+    }
+  }
+  &.NohaveSupExpanded {
+    &:after {
+      background-image: url('./support.svg');
+    }
+  }
+  &__count {
+    font-weight: 400;
+  }
+}
+
+
