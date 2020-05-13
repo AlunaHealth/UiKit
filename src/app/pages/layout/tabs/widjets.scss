@@ -62,7 +62,7 @@
     min-height: 36px;
     padding: 0 16px 0 20px;
     text-transform: uppercase;
-    color: #323563;
+    color: #121212;
   }
 
 }
@@ -104,7 +104,7 @@
 
     &:before {
       content: "\e902";
-      color: #DADADA;
+      color: rgba(50, 53, 99, 0.4);
       font-style: normal;
     }
   }
@@ -115,7 +115,7 @@
 
     &:before {
       content: "\e901";
-      color: #DADADA;
+      color: rgba(50, 53, 99, 0.4);
       font-style: normal;
     }
   }
@@ -448,6 +448,9 @@ cng-tabs {
     padding-right: 16px;
     flex: 1;
     text-align: left;
+  }
+  & a {
+    color: #1EAAF1;
   }
 }
 

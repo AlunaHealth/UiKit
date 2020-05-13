@@ -100,6 +100,7 @@ $basic-gray: #e1e1e1;
     background-color: #fff;
     color: $basic-cha-secondary;
     border: 1px solid $basic-cha-secondary;
+    line-height: 1;
     &.active {
       background-color: #fff;
       border:  1px solid $basic-pressed;
@@ -187,6 +188,10 @@ $basic-gray: #e1e1e1;
   background-color: #fff;
   color: $basic-cha-secondary;
   text-decoration: none;
+  outline: none !important;
+  * {
+    outline: none !important;
+  }
   &.active {
     background-color: #fff;
     color: $basic-pressed;
@@ -288,3 +293,16 @@ $basic-gray: #e1e1e1;
   }
 }
 
+.flex-wrap-k {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  nb-card {
+    width: 360px;
+    margin-left: 16px;
+  }
+
+}

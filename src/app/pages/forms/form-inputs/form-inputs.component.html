@@ -285,7 +285,7 @@
               <div class="search-loader-wrapper">
                 <mat-form-field class="icon icon-right">
                   <input matInput placeholder="Search..." value="{{searchText}}">
-                  <i class="icon-16 icon-close-2  color-gray"></i>
+                  <i class="icon-16 icon-close-2  color-gray" style="font-size: 12px"></i>
                 </mat-form-field>
                 <div class="search-loader">
                   <i *ngIf="true" class="icon-basic icon-circle-plus color-white" (mouseup)="clear($event)"></i>
@@ -385,13 +385,23 @@
                 <mat-form-field class="custom-textarea">
                   <mat-label>Autosize textarea</mat-label>
                   <textarea matInput
+                            [formControl]="emailFormControl"
                             cdkTextareaAutosize
                             #autosize="cdkTextareaAutosize"
                             cdkAutosizeMinRows="3"
                             cdkAutosizeMaxRows="5"
                             value="nemnogo teksta"
-                            disabled
+
                   ></textarea>
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Enter <strong>text</strong>
+                  </mat-error>
+
+
                 </mat-form-field>
               </div>
             </div>

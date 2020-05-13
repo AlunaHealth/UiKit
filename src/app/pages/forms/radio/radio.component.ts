@@ -10,6 +10,5 @@ import { NbComponentStatus} from '@nebular/theme';
 })
 export class RadioComponent {
   statuses: NbComponentStatus[] = [ 'primary', 'success', 'info', 'warning', 'danger' ];
-  favoriteSeason: string;
-  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
+  favoriteSeason: string = 'Winter';
 }

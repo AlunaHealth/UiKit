@@ -34,4 +34,13 @@
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Lato, Sans-Serif; }
+body {
+  margin: 0;
+  font-family: Lato, Sans-Serif !important;
+}
+.mat-body, .mat-body-1, .mat-typography {
+  font: 400 14px/20px 'Lato', Sans-Serif;
+}
+.nb-theme-corporate nb-card {
+  font-family: Lato, Sans-Serif !important;
+}

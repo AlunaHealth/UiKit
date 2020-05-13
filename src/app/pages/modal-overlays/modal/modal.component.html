@@ -4,8 +4,8 @@
       <nb-card-header>popover</nb-card-header>
         <nb-card-body>
           <div>
-            <div class="btn" [satPopoverAnchor]="p" (mouseenter)="p.open()" (mouseleave)="p.close()">Hover</div>
-            <sat-popover #p horizontalAlign="after">
+            <div class="btn" [satPopoverAnchor]="p" (click)="p.open()" >Hover</div>
+            <sat-popover #p horizontalAlign="after" >
               <div class="popover">
                 <div class="popover__date"> 02/01/2007 </div>
                 <div class="popover__title popover-title"> <span>

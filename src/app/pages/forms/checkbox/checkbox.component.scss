@@ -17,6 +17,7 @@ nb-card-body {
 }
 ::ng-deep {
   .cha-checkbox {
+    font-family: 'Lato', Sans-Serif;
     display: block;
     .mat-checkbox-inner-container {
       width: 20px;
@@ -44,9 +45,13 @@ nb-card-body {
     &.mat-checkbox .mat-ripple-element {
     background: #1EAAF1;
     }
+    &.mat-checkbox-checked .mat-checkbox-label {
+      color: #121212;
+    }
+
     .mat-checkbox-label {
       font-size: 14px;
-      color: #121212;
+      color: #545454;
     }
     &.mat-checkbox-disabled {
       cursor: not-allowed;
