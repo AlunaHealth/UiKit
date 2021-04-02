@@ -4,8 +4,8 @@
       <nb-card-header>popover</nb-card-header>
         <nb-card-body>
           <div>
-            <div class="btn" [satPopoverAnchor]="p" (mouseenter)="p.open()" (mouseleave)="p.close()">Hover</div>
-            <sat-popover #p horizontalAlign="after">
+            <div class="btn" [satPopoverAnchor]="p" (click)="p.open()" >Hover</div>
+            <sat-popover #p horizontalAlign="after" >
               <div class="popover">
                 <div class="popover__date"> 02/01/2007 </div>
                 <div class="popover__title popover-title"> <span>
@@ -36,7 +36,7 @@
               <mat-expansion-panel>
                 <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
                   <mat-panel-title>
-                    <div class="sheet-accordion-title"> <i><img src="../../../../assets/images/sucs.svg" alt="sucsess"></i> <span class="sheet-accordion-title__text">
+                    <div class="sheet-accordion-title"> <i><img [src]="locationStrategy.getBaseHref()+'assets/images/sucs.svg'" alt="sucsess"></i> <span class="sheet-accordion-title__text">
                      7 new clinical trials
                      </span> </div>
                   </mat-panel-title>
@@ -46,7 +46,7 @@
               <mat-expansion-panel>
                 <mat-expansion-panel-header [collapsedHeight]="'40px'" [expandedHeight]="'40px'">
                   <mat-panel-title>
-                    <div class="sheet-accordion-title"> <i><img src="../../../../assets/images/sucs.svg" alt="sucsess"></i> <span class="sheet-accordion-title__text">
+                    <div class="sheet-accordion-title"> <i><img [src]="locationStrategy.getBaseHref()+'assets/images/sucs.svg'" alt="sucsess"></i> <span class="sheet-accordion-title__text">
                      6 new clinical trials
                      </span> </div>
                   </mat-panel-title>

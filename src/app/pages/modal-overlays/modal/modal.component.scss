@@ -8,7 +8,7 @@ nb-card-body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 15px 13px 9px;
   max-width: 232px;
-
+  border-radius: 0;
   &__date {
     padding-left: 10px;
     position: relative;
@@ -102,6 +102,9 @@ nb-card-body {
   .mat-expansion-indicator {
     left: initial;
     right: 0;
+    &:after {
+      margin-top: -5px;
+    }
   }
 
   .mat-expansion-panel-spacing {
@@ -112,6 +115,7 @@ nb-card-body {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    border-radius: 0;
   }
 
   .mat-expansion-panel-header {
@@ -131,7 +135,7 @@ nb-card-body {
     .sheet-component-header {
       background: #323563;
       &__btn {
-        color: #809CFF;
+        color: #1EAAF1;
       }
       &__title {
         color: #fff;
@@ -222,3 +226,10 @@ nb-card-body {
 }
 
 
+::ng-deep {
+  .mat-expansion-indicator {
+    &:after {
+      margin-top: -5px;
+    }
+  }
+}

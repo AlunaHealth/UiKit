@@ -1,15 +1,16 @@
 <div class="row">
   <div class="col-md-12 col-xl-6">
-    <nb-card size="giant">
+    <nb-card>
       <nb-card-header>
-        Basic Colors
+        Basic Colors.
       </nb-card-header>
       <nb-card-body>
         <div class="colors" >
           <div class="item text-heading" *ngFor="let color of colors.basics">
-            <div class="color bg-{{color}}"></div>
+            <div class="color bg-{{color.colors}}"></div>
             <div>
-              <h5 class="text-heading">{{color}}</h5>
+              <h5 class="text-heading">{{color.colors}}</h5>
+              <h5 class="text-heading">{{color.property}}</h5>
             </div>
           </div>
         </div>
@@ -18,7 +19,7 @@
   </div>
   <div class="col-md-12 col-xl-6">
     <div>
-      <nb-card size="small">
+      <nb-card>
         <nb-card-header>
           Text Colors
         </nb-card-header>
@@ -26,9 +27,10 @@
           <div class="colors">
             <div class="colors" >
               <div class="item text-heading" *ngFor="let color of colors.text">
-                <div class="color bg-{{color}}"></div>
+                <div class="color bg-{{color.colors}}"></div>
                 <div>
-                  <h5 class="text-heading">{{color}}</h5>
+                  <h5 class="text-heading">{{color.colors}}</h5>
+                  <h5 class="text-heading">{{color.property}}</h5>
                 </div>
               </div>
             </div>
@@ -37,7 +39,7 @@
       </nb-card>
     </div>
     <div>
-      <nb-card size="small">
+      <nb-card >
         <nb-card-header>
           Alert Colors
         </nb-card-header>
@@ -46,9 +48,10 @@
             <div class="colors">
               <div class="colors" >
                 <div class="item text-heading" *ngFor="let color of colors.alert">
-                  <div class="color bg-{{color}}"></div>
+                  <div class="color bg-{{color.colors}}"></div>
                   <div>
-                    <h5 class="text-heading">{{color}}</h5>
+                    <h5 class="text-heading">{{color.colors}}</h5>
+                    <h5 class="text-heading">{{color.property}}</h5>
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@
 
   &.mat-table {
     background: transparent;
-
+    font-family: 'Lato', Sans-Serif;
     tr {
 
       &.mat-header-row {
@@ -33,7 +33,7 @@
       line-height: 1.38em;
       padding: 4px 2px;
       border-bottom: 1px solid #323563;
-
+      font-weight: 400;
       &:first-of-type {
         padding-left: 8px;
       }

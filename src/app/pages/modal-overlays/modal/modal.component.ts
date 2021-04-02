@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
+import {LocationStrategy} from '@angular/common';
 @Component({
   selector: 'ngx-modal',
   styleUrls: ['./modal.component.scss', '../../forms/buttons/buttons.component.scss'],
@@ -10,7 +11,8 @@ import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
 })
 export class ModalComponent {
   constructor(public dialog: MatDialog,
-              public snackBar: MatSnackBar) {
+              public snackBar: MatSnackBar,
+              public locationStrategy: LocationStrategy) {
   }
   public Decision: boolean = false;
   public contentDecisionBtn: any = 'Hide';

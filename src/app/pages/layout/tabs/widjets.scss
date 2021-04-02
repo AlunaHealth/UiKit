@@ -62,7 +62,7 @@
     min-height: 36px;
     padding: 0 16px 0 20px;
     text-transform: uppercase;
-    color: #323563;
+    color: #121212;
   }
 
 }
@@ -104,7 +104,7 @@
 
     &:before {
       content: "\e902";
-      color: #DADADA;
+      color: rgba(50, 53, 99, 0.4);
       font-style: normal;
     }
   }
@@ -115,14 +115,14 @@
 
     &:before {
       content: "\e901";
-      color: #DADADA;
+      color: rgba(50, 53, 99, 0.4);
       font-style: normal;
     }
   }
   &__close {
-    font-size: 13px;
-    width: 13px;
-    height: 13px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
     &:before {
       content: "\e900";
       color: #0a95db;
@@ -137,10 +137,11 @@
     margin-left: 8px;
     &:after {
       content: '';
-      left: 4px;
+      left: 3px;
       top: 0;
       bottom: 0;
       width: 1px;
+      position: absolute;
       border: 1px dashed #CCCCCC;
     }
   }
@@ -448,6 +449,9 @@ cng-tabs {
     padding-right: 16px;
     flex: 1;
     text-align: left;
+  }
+  & a {
+    color: #1EAAF1;
   }
 }
 
